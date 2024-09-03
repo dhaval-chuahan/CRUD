@@ -6,3 +6,5 @@ db.teachers.deleteMany({school_name : "Bubblebox"});
 
 // for Delete database
 db.teachers.deleteMany({});
+
+db.teachers.deleteOne({favorite_color : "purple"});

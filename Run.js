@@ -37,7 +37,6 @@ db.users.find({"Email" : "Cayla89@hotmail.com"})
 
 db.users.find( { name: { $in: [ "Janice Bednar MD" ] } } )
 
-
 db.users.find( { "PhoneNumber": "291-342-4783", "id": { $gte: "4" } } )
 
 
@@ -55,6 +54,9 @@ db.users.find().toArray()
 
  
 
-
+db.teachers.find( {
+    class_size : 22,
+    $or: [ { "year_of_experience" : { $gte: 20 } }, { school_name: "123 Middle School" } ]
+} )
 
 
